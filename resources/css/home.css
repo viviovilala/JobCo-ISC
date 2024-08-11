@@ -1,0 +1,634 @@
+csss home pertahankan testimoni member JobCo
+/* home.css */
+
+/* Hero Banner */
+.hero-banner {
+  position: relative;
+  background-color: #F4EEF7;
+  height: 630px;
+  overflow: hidden; /* Prevent slider content from overflowing */
+}
+
+.hero-banner .slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-banner .harga {
+  position: absolute;
+  width: 378px;
+  height: 89px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 82px;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+  border: 10px solid #431B56;
+  text-align: center;
+}
+
+.hero-banner .harga::before {
+  content: "Rp 150.000";
+  position: absolute;
+  width: 367px;
+  height: 82px;
+  left: 11px;
+  top: 7px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 82px;
+  letter-spacing: -0.05em;
+  color: #431B56;
+  opacity: 0.86;
+}
+
+.hero-banner .harga-normal {
+  position: absolute;
+  width: 186px;
+  height: 60px;
+  left: 10%;
+  top: 60%;
+  font-family: 'Public Sans';
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.hero-banner .harga-normal span:first-child {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+}
+
+.hero-banner .harga-normal span:last-child {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.07em;
+  text-decoration-line: line-through;
+}
+
+.hero-banner .diskon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 10%;
+  top: 10%;
+  background: #F7B000;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner .diskon span {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  transform: rotate(16.93deg);
+}
+
+.hero-banner .diskon span:first-child {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+}
+
+.hero-banner .diskon span:last-child {
+  font-size: 35px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+}
+
+.fitur-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.fitur-banner .badge {
+  margin: 0 5px;
+  font-family: 'Public Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+/* Mulai Karir Section */
+.mulai-karir {
+  margin-top: 50px; 
+}
+
+.mulai-karir .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mulai-karir .card {
+  width: 215px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4.8px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin: 10px; 
+  text-align: center;
+}
+
+.mulai-karir .card img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.mulai-karir .card .card-body {
+  padding: 15px;
+}
+
+.feature-box {
+  text-align: center;
+}
+
+.feature-box .image {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 15px;
+}
+
+.feature-box .text {
+  font-family: 'Public Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+/* Category Filter Section */
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px; /* Sesuaikan margin */
+}
+
+.frame-148 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 10px;
+  width: fit-content; 
+  height: 32px;
+  background: #FFFFFF;
+  border: 0.5px solid #E5E7EB;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.28);
+  border-radius: 20px;
+}
+
+.frame-148 .text {
+  width: fit-content; 
+  height: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+/* Testimonials Section */
+.testimoni {
+  position: relative; 
+  margin-top: 50px;
+}
+
+.testimoni .text {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+}
+
+.testimoni-section {
+  margin-top: 40px;
+}
+
+.testimoni-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  padding-bottom: 20px; 
+}
+
+.testimoni-item {
+  min-width: 380px; 
+  flex-shrink: 0; 
+  padding: 0 10px; 
+}
+
+.testimoni-card {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10.3px 3px rgba(0, 0, 0, 0.13);
+  border-radius: 16px;
+}
+
+.testimonial-text {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1F2021;
+}
+
+.quote {
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  left: 110px;
+  top: 107px;
+  background: url(image.png); /* Ganti dengan URL gambar quote */
+  opacity: 0.5;
+  border-radius: 16px;
+  transform: rotate(180deg);
+}
+
+.customer {
+  position: absolute;
+  width: 73px;
+  height: 19px;
+  left: 64px;
+  top: 183px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #616161;
+  opacity: 0.77;
+}
+
+.name {
+  position: absolute;
+  width: 185px;
+  height: 24px;
+  left: 64px;
+  top: 154px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.avatar {
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  left: 419px;
+  top: 174px;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.jobco-label {
+  position: absolute;
+  width: 47px;
+  height: 19px;
+  left: 408px;
+  top: 46px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+
+/* Program Section */
+.program {
+  position: relative; 
+  margin-top: 50px;
+}
+
+.program .text {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+}
+
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px; /* Sesuaikan margin */
+}
+
+.program-item {
+  flex: 0 0 calc(50% - 20px); /* Two columns */
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4.8px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.program-item .image {
+  width: 100%;
+  height: 279px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.program-item .title {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.program-item .description {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+}
+
+.program-item .radio-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.program-item .radio-button .container {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  margin-right: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.program-item .radio-button .icon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000000;
+  display: none; 
+}
+
+.program-item .radio-button.selected .icon {
+  display: block;
+}
+
+/* Mentor Section */
+.mentor {
+  position: relative; 
+  margin-top: 50px; 
+}
+
+.mentor .text {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+}
+
+.mentor-list {
+  margin-top: 40px; 
+}
+
+.mentor-item {
+  position: relative;
+  width: 287px;
+  height: 389px;
+  margin: 0 10px;
+  background: #FFFFFF;
+  border: 0.5px solid #C8ACD6;
+  border-radius: 16px;
+}
+
+.mentor-item .avatar {
+  width: 100%;
+  height: 234px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  background-size: cover; 
+}
+
+.mentor-item .mentor-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.mentor-item .name {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.mentor-item .description {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.7;
+}
+
+/* Dampak Positif Section */
+.dampak-positif {
+  background-color: #F4EEF7;
+  padding: 50px 0;
+  margin-top: 50px; 
+}
+
+.dampak-positif .container-xl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dampak-positif .text-content {
+  flex: 1;
+}
+
+.dampak-positif .judul {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: #433D8B;
+  margin-bottom: 1rem;
+}
+
+.dampak-positif .deskripsi {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #404040;
+}
+
+.dampak-positif .tombol {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dampak-positif .image-content {
+  flex: 0 0 300px; 
+  position: relative; 
+}
+
+.dampak-positif .rectangle-111 {
+  position: absolute;
+  width: 100%;
+  height: 313px; /* Tinggi sama dengan gambar */
+  background: #000000;
+  box-shadow: 7px 5px 14.7px 1px rgba(255, 255, 255, 0.7);
+  border-radius: 21px;
+  z-index: -1; /* Pastikan berada di belakang gambar */
+}
+
+.dampak-positif .gambar-statistik {
+  position: relative; /* Untuk memposisikan elemen statistik */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.dampak-positif .gambar-statistik .angka {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.dampak-positif .gambar-statistik .teks {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.dampak-positif .gambar-statistik img {
+  width: 100%;
+  height: 174px;
+  object-fit: cover;
+  border-radius: 21px;
+}
+
+.dampak-positif .vector-25,
+.dampak-positif .vector-26,
+.dampak-positif .vector-27 {
+  width: 143px;
+  border-top: 1px solid #404040;
+  margin: 10px 0; 
+}
+
+.dampak-positif .group-178,
+.dampak-positif .group-179,
+.dampak-positif .group-180 {
+  text-align: center;
+}
+
+/* Mitra Section */
+.mitra {
+  background-color: #F4EEF7;
+  padding: 50px 0;
+  margin-top: 50px; /* Sesuaikan margin */
+}
+
+.mitra .text {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #404040;
+  text-align: center;
+}
+
+.mitra .slider-container {
+  width: 100%;
+  margin: 30px auto;
+}
+
+.mitra .card {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4.8px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  text-align: center;
+  padding: 20px;
+}
+
+.mitra .card img {
+  width: 111px;
+  height: 111px;
+  margin: 0 auto 15px;
+}
+
+.mitra .card .card-text {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+}
+
+/* Partner Logo - Inactive State */
+.mitra .card[style*="opacity: 0.5;"] { /* Target card dengan style opacity 0.5 */
+  border: 1px solid #737373; /* Border untuk partner yang tidak aktif */
+}

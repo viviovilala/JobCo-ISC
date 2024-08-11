@@ -1,0 +1,499 @@
+/* E-learning */
+.e-learning {
+    position: relative;
+    width: 1440px;
+    height: auto; /* Sesuaikan tinggi otomatis */
+    background: #FFFFFF;
+    font-family: 'Public Sans', sans-serif; /* Tetapkan font default */
+  }
+  
+  /* Header */
+  .header {
+    position: relative; /* Ubah ke relative */
+    width: 1438px;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Atur spasi antar elemen */
+    padding: 0 50px; /* Tambahkan padding */
+  }
+  
+  .header-background {
+    position: absolute;
+    width: 1438px;
+    height: 672px;
+    left: 0px;
+    top: 0px;
+    background: #F4EEF7;
+    z-index: -1; /* Letakkan di belakang header */
+  }
+  
+  .logo {
+    width: 98px;
+    height: 55px;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    margin-right: 30px; /* Atur spasi antar link */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none; /* Hapus garis bawah */
+  }
+  
+  .nav-link.active {
+    color: #C8ACD6;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px; /* Sesuaikan padding */
+    border: 1px solid #433D8B;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #433D8B;
+    text-decoration: none; /* Hapus garis bawah */
+    margin-left: 20px; /* Atur spasi antar tombol */
+  }
+  
+  .button.primary {
+    background: #433D8B;
+    color: #FFFFFF;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 150px 50px; /* Tambahkan padding */
+  }
+  
+  .hero-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+    margin-bottom: 20px; /* Tambahkan margin */
+  }
+  
+  .hero-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 30px; /* Tambahkan margin */
+  }
+  
+  .hero-counter {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FF0000;
+  }
+  
+  /* Testimoni */
+  .testimonials {
+    text-align: center;
+    padding: 50px; /* Tambahkan padding */
+  }
+  
+  .section-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 30px; /* Tambahkan margin */
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Izinkan wrap */
+    gap: 30px;
+  }
+  
+  .testimonial-card {
+    position: relative;
+    width: 518px;
+    height: 255px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10.3px 3px rgba(0, 0, 0, 0.13);
+    border-radius: 16px;
+    padding: 20px; /* Tambahkan padding */
+  }
+  
+  .testimonial-card .company {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 10px; /* Tambahkan margin */
+  }
+  
+  .testimonial-card .quote {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1F2021;
+    margin-bottom: 15px; /* Tambahkan margin */
+  }
+  
+  .testimonial-card .name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 5px; /* Tambahkan margin */
+  }
+  
+  .testimonial-card .role {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #616161;
+    opacity: 0.77;
+  }
+  
+  .testimonial-card .avatar {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    bottom: 20px;
+    background: #D9D9D9;
+    opacity: 0.35;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testimonial-card .avatar img {
+    width: 73px;
+    height: 73px;
+    border-radius: 16px;
+  }
+  
+  .testimonial-card .quote-icon {
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    left: 20px;
+    bottom: 20px;
+    opacity: 0.5;
+    border-radius: 16px;
+    transform: rotate(180deg);
+  }
+  
+  /* Keunggulan / Feature */
+  .e-learning-section {
+    text-align: center;
+    padding: 50px; /* Tambahkan padding */
+  }
+  
+  .section-subtitle {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 50px; /* Tambahkan margin */
+  }
+  
+  .feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Izinkan wrap */
+    gap: 30px;
+  }
+  
+  .feature-card {
+    box-sizing: border-box;
+    width: 590px;
+    height: 109px;
+    border: 0.5px solid #737373;
+    border-radius: 16px;
+    padding: 20px; /* Tambahkan padding */
+    text-align: left; /* Sejajarkan teks ke kiri */
+  }
+  
+  .feature-card h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 10px; /* Tambahkan margin */
+  }
+  
+  .feature-card p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #404040;
+  }
+  
+  .feature-card .icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 24px;
+    background: #C8ACD6;
+    border-radius: 100px;
+  }
+  
+  .feature-image {
+    position: absolute;
+    width: 408px;
+    height: 408px;
+    right: 150px;
+    top: 1075px;
+  }
+  
+  /* Materi */
+  .materials-section {
+    padding: 50px; /* Tambahkan padding */
+  }
+  
+  .material-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Izinkan wrap */
+  }
+  
+  .material-card {
+    box-sizing: border-box;
+    width: 392px;
+    height: 523px;
+    background: #FFFFFF;
+    border: 0.5px solid #737373;
+    border-radius: 16px;
+    margin-bottom: 30px; /* Tambahkan margin */
+  }
+  
+  .material-header {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 268px;
+    background: #C8ACD6;
+    border-bottom: 0.5px solid #737373;
+    border-radius: 16px 16px 0px 0px;
+    padding: 20px; /* Tambahkan padding */
+  }
+  
+  .material-header .company {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  
+  .material-header .type {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    margin-bottom: 10px; /* Tambahkan margin */
+  }
+  
+  .material-header .title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    color: #433D8B;
+    margin-bottom: 10px; /* Tambahkan margin */
+  }
+  
+  .material-header .info {
+    width: 158px;
+    height: 20px;
+    background: #C8ACD6;
+    border-radius: 3px;
+    margin-bottom: 15px; /* Tambahkan margin */
+  }
+  
+  .material-header .info .label {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    padding: 3px 8px; /* Tambahkan padding */
+  }
+  
+  .material-header .features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .material-header .features li {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+    color: #000000;
+    margin-bottom: 5px; /* Tambahkan margin */
+    position: relative; /* Untuk penempatan bullet point */
+    padding-left: 15px; /* Tambahkan padding untuk bullet point */
+  }
+  
+  .material-header .features li::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000000;
+    border-radius: 100px;
+  }
+  
+  .material-header .avatar {
+    position: absolute;
+    width: 234px;
+    height: 234px;
+    left: 20px;
+    bottom: 0;
+  }
+  
+  .material-footer {
+    padding: 20px; /* Tambahkan padding */
+  }
+  
+  .material-footer .discount {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Tambahkan margin */
+  }
+  
+  .material-footer .percentage {
+    width: 29px;
+    height: 17px;
+    background: #C8ACD6;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-right: 8px; /* Tambahkan margin */
+  }
+  
+  .material-footer .original-price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #737373;
+    text-decoration-line: line-through;
+  }
+  
+  .material-footer .price {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    color: #E01E5A;
+    margin-bottom: 15px; /* Tambahkan margin */
+  }
+  
+  .material-footer .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Tambahkan margin */
+  }
+  
+  .material-footer .stats span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+  }
+  
+  /* Mentor */
+  .mentors-section {
+    padding: 50px; /* Tambahkan padding */
+  }
+  
+  .mentor-cards {
+    display: flex;
+    flex-wrap: wrap; /* Izinkan wrap */
+    gap: 30px;
+  }
+  
+  .mentor-card {
+    box-sizing: border-box;
+    width: 287px;
+    height: 389px;
+    border: 0.5px solid #C8ACD6;
+    border-radius: 16px;
+    padding: 20px; /* Tambahkan padding */
+    text-align: center;
+  }
+  
+  .mentor-card .avatar {
+    width: 234px;
+    height: 234px;
+    border-radius: 16px;
+    margin-bottom: 15px; /* Tambahkan margin */
+  }
+  
+  .mentor-card .name {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 10px; /* Tambahkan margin */
+  }
+  
+  .mentor-card .description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.7;
+  }
+  
+  /* Responsive Design (Optional) */
+  @media (max-width: 768px) {
+    .e-learning {
+      width: 100%;
+    }
+  
+    .header {
+      width: 100%;
+      flex-direction: column; /* Ubah header menjadi vertikal */
+    }
+  
+    .testimonial-cards, .feature-cards, .material-cards, .mentor-cards {
+      flex-direction: column; /* Ubah tampilan menjadi satu kolom */
+    }
+  
+    .material-card {
+      width: 100%;
+    }
+  }

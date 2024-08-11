@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  font-family: 'Public Sans', sans-serif; 
+}
+
+.container {
+  max-width: 1140px; /* Sesuaikan lebar container */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.btn-primary {
+  background-color: #433D8B;
+  color: #FFFFFF;
+  border: 1px solid #433D8B;
+}
+
+.btn-secondary {
+  background-color: #FFC107;
+  color: #000000;
+  border: 1px solid #FFC107;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #F4EEF7;
+  padding: 50px 0; 
+  text-align: center; 
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 3rem; 
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-cta .btn {
+  margin: 0 10px;
+}
+
+/* Testimoni Section */
+.testimoni-section {
+  padding: 50px 0; 
+  background-color: #f8f9fa; /* Warna latar belakang */
+}
+
+.testimoni-card {
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 10.3px 3px rgba(0, 0, 0, 0.13);
+  border-radius: 16px;
+  padding: 20px; 
+  margin-bottom: 20px; 
+  position: relative; /* Untuk menempatkan avatar */
+}
+
+.testimoni-content {
+  margin-bottom: 60px;
+}
+
+.testimoni-author {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.testimoni-role {
+  font-size: 0.9rem;
+  color: #616161;
+  opacity: 0.77;
+}
+
+.testimoni-avatar {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 73px;
+  height: 73px;
+  border-radius: 16px;
+}
+
+/* Program Section */
+.program-section {
+  padding: 50px 0;
+}
+
+.program-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.program-card {
+  width: 350px;
+  background-color: #FFFFFF;
+  border: 0.5px solid #737373;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.program-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.program-description {
+  font-size: 0.9rem;
+  color: #404040;
+}
+
+/* Mentor Section */
+.mentor-section {
+  padding: 50px 0;
+  background-color: #f8f9fa; /* Warna latar belakang */
+}
+
+.mentor-card {
+  background-color: #FFFFFF;
+  border: 0.5px solid #C8ACD6;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+.mentor-name {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mentor-description {
+  font-size: 0.9rem;
+  color: #000000;
+  opacity: 0.7;
+}
